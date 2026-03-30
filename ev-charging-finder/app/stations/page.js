@@ -1,48 +1,19 @@
 import Image from "next/image"
 
-export default function Home() {
+export default function Stations() {
   return (
-    <div>
+    <div style={{padding:"30px"}}>
 
-      {/* HERO SECTION */}
-      <section style={{textAlign:"center", padding:"40px"}}>
-        <h1>EV Charging Finder ⚡</h1>
+      <h1>EV Charging Stations</h1>
 
-        <Image
-          src="/images/home.jpg"
-          alt="EV Charging"
-          width={1000}
-          height={400}
-        />
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Electric_vehicle_charging_station_BMW_i3.jpg"
+        alt="Stations"
+        width={900}
+        height={400}
+      />
 
-        <p>
-          Locate EV charging stations quickly and travel with confidence.
-        </p>
-      </section>
-
-
-      {/* FEATURES SECTION */}
-      <section style={{padding:"40px", background:"#f4f4f4"}}>
-        <h2>Why Use Our Platform?</h2>
-
-        <ul>
-          <li>✔ Find nearby charging stations</li>
-          <li>✔ Check charger availability</li>
-          <li>✔ Plan long distance EV trips</li>
-        </ul>
-      </section>
-
-
-      {/* INFO SECTION */}
-      <section style={{padding:"40px"}}>
-        <h2>About Electric Vehicles</h2>
-
-        <p>
-          Electric vehicles are becoming the future of sustainable
-          transportation. Reliable charging infrastructure helps EV
-          drivers travel longer distances with ease.
-        </p>
-      </section>
+      <p>List of available EV charging stations.</p>
 
     </div>
   )

@@ -2,25 +2,18 @@ import Image from "next/image"
 
 export default function MapPage() {
   return (
-    <div>
+    <div style={{padding:"30px"}}>
 
-      <section style={{textAlign:"center", padding:"30px"}}>
-        <h1>EV Charging Map</h1>
+      <h1>EV Charging Map</h1>
 
-        <Image
-          src="/images/map.jpg"
-          alt="Map"
-          width={1000}
-          height={400}
-        />
-      </section>
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Electric_car_charging_map.jpg"
+        alt="EV Map"
+        width={900}
+        height={400}
+      />
 
-      <section style={{padding:"30px"}}>
-        <p>
-          Use the map to locate nearby charging stations and
-          plan your EV routes effectively.
-        </p>
-      </section>
+      <p>Locate charging stations using the map.</p>
 
     </div>
   )
